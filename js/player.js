@@ -8,6 +8,7 @@ app.scene.player={
 		var loader = new THREE.ColladaLoader();
 		loader.options.convertUpAxis = true;
 		loader.load( './assets/models/monster/monster.dae', function ( collada ) {
+		// loader.load( './assets/models/chair/Chair_Static.DAE', function ( collada ) {
 			monster.dae = collada.scene;
 			monster.skin = collada.skins[ 0 ];
 
